@@ -1,38 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('https://images.hdqwalls.com/download/retrowave-ap-1366x768.jpg');
-    background-size: auto auto;
+    background-image: url("fundo.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
     font-family: Arial;
-    /*height: 100vh;*/
 }
 
-
-/*
-.menu{
-    backgroud-color: white;
+header {
+    width: 100%;
 }
-*/
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.conteudo,
+.conteudo-sobre,
+p {
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.conteudo,
+.conteudo-sobre,
+a {
+    display: block;
+    color: white;
+    text-align: inherit;
+    padding: inherit;
+    text-decoration: none;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.conteudo-sobre a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.conteudo a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+p {
+    font-family: "Lato", "Helvetica", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+}
 
 .menu ul {
-    display: flex;
-    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 .menu li {
-    list-style: none;
+    float: left;
 }
 
-a {
-    color: yellow;
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-
-/*Hover é uma pseudo classe, ou seja,
-  fica ativo quando acontece um evento*/
-
-a:hover {
+.menu li a:hover {
     text-decoration: underline;
-    color: Lime;
+    color: gray;
 }
 
 .site-title,
@@ -41,6 +88,55 @@ a:hover {
     text-align: center;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     font-style: italic;
+    font-size: 2em;
+}
+
+.container-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.redes-sociais li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.redes-sociais li a:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.redes-sociais ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.conteudo,
+.conteudo-sobre {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 200px;
+}
+
+.conteudo-sobre {
+    margin-top: 50px;
 }
