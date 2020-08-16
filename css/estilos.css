@@ -21,7 +21,7 @@ h1 {
     text-align: center;
 }
 
-.conteudo,
+.conteudo-curriculum,
 .conteudo-sobre,
 p {
     color: white;
@@ -29,7 +29,7 @@ p {
     margin: 5px;
 }
 
-.conteudo,
+.conteudo-curriculum,
 .conteudo-sobre,
 a {
     display: block;
@@ -46,7 +46,7 @@ a {
     color: gray;
 }
 
-.conteudo a:hover {
+.conteudo-curriculum a:hover {
     text-decoration: underline;
     color: gray;
 }
@@ -127,14 +127,14 @@ p {
     overflow: hidden;
 }
 
-.conteudo,
+.conteudo-curriculum,
 .conteudo-sobre {
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 200px;
+    margin: 100px;
 }
 
 .conteudo-sobre {
